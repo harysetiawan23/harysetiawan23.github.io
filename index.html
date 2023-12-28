@@ -1,30 +1,90 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hi Iam Hary</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Code+Pro:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="resources/assets/css/style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio : Hary Setiawan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Montserrat:wght@500&family=Noto+Sans+Linear+A&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;200;300;400;500;600;700;800&family=Whisper&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/613b893023.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-house" style="color: #d9d9d9;"></i>
+        <p>Portfolio</p>
+        <i id="hamburger-menu" class="fa-solid fa-bars mobile"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#get-in-touch">Get In Touch</a></li>
+        </ul>
+      </nav>
+      <nav id="mobile-menu" class="mobile">
+        <div class="dropdown-container">
+          <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#get-in-touch">Get In Touch</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
     <main>
-      <div class="container">
-        <h1>Hi There</h1>
-        <h2>Hary is Here!</h2>
-        <h3>Finds me on : </h3>
-        <div class="social-media">
-          <div>
-            <a href="mailto:agus.hary16@gmail.com">agus.hary16@gmail.com</a>
+      <div id="contact" class="column flex-1">
+        <div class="account">
+          <div class="image-container">
+            <img src="assets/img/C8F1E650-927A-4CD0-A036-EFB6B7090F62_1_105_c.jpeg">
           </div>
-          <div>
-            <a href="https://github.com/harysetiawan23/">github.com/harysetiawan23</a>
-          </div>
+          
+          <h1>Hary Setiawan</h1>
+          <p>agus.hary16@gmail.com</p>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-github-alt"></i> harysetiawan23</a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i> Hary Setiawan</a></li>
+            <li><a href=""><i class="fa-solid fa-star"></i> Hary Setiawan</a></li>
+          </ul>
         </div>
       </div>
+
+      <div id="content" class="column flex-2">
+        <section id="about-me">
+          <h2># About Me</h2>
+          <div id="introduction" class="card">
+            <h3>Introduction</h3>
+            <p>
+              Hello my full name is I Made Agus Hary Setiawan, you can call me Hary. I finish my bachelor study on Udayana University, Engineering Faculty, Information Technology Majority. I have experience making backend service, API and managing AWS Cloud Infra with Kubernetes Orchestration
+            </p>
+          </div>
+          <h2># Key Skills</h2>
+          <div id="key-skills" class="card">
+            <div id="skills-pills" class="pills-container">
+            </div>
+          </div>
+          <h2 id="project"># Project</h2>
+          <div id="project-experience">
+          </div>
+        </section>
+          
+      </div>
+
+      <div id="content" class="column flex-2">
+        <section id="work-experience">
+          <h2># Work Experience</h2>
+          <div id="experience">
+          </div>
+        </section>
+      </div>
+
     </main>
   </body>
-</html>
+  <script src="assets/js/script.js"></script>
+  </html>
